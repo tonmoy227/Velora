@@ -15,6 +15,7 @@
 		top: 0;
 		left: 0;
 		width: 100%;
+		z-index: 2;
 		content: '';
 		height: 100%;
 		position: absolute;
@@ -77,6 +78,14 @@
 		}
 		@media #{$xxxs} {
 			font-size: 45px;
+		}
+	}
+	.vl-btn {
+		a {
+			&:hover {
+				background-color: var(--vl-prime-c);
+				border: 1px solid var(--vl-prime-c);
+			}
 		}
 	}
 }
@@ -157,5 +166,10 @@
 		border-radius: 4px;
 		text-align: center;
 		padding: 13px 20px;
+		transition: all 500ms ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: var(--vl-prime-c);
+		}
 	}
 }

@@ -33,7 +33,7 @@
 	}
 	.dropdown-menu {
 		left: 0;
-		top: 53px;
+		top: 48px;
 		z-index: 100;
 		margin: 0px;
 		padding: 4px 4px 15px;
@@ -203,6 +203,9 @@
 				a {
 					font-size: 14px;
 					color: #ECE5D6;
+					&:hover {
+						color: var(--vl-prime-c2);
+					}
 				}
 			}
 		}
@@ -223,6 +226,8 @@
 					a {
 						color: #ECE5D6;
 						font-size: 14px;
+						display: inline;
+						padding-bottom: 25px;
 						letter-spacing: .56px;
 						text-transform: uppercase;
 					}
@@ -237,6 +242,31 @@
 					padding: 0;
 					border: none;
 					background-color: transparent;
+				}
+			}
+		}
+	}
+	&:is(.txa_sticky_header) {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		transition: 300ms ease-in-out;
+		z-index: 10;
+		&:is(.txa_sticky) {
+			transform: translateY(-150%);
+			&:is(.txa_sticky_show) {
+				transform: translateY(0%);
+			}
+			&:is(.header_style_one) {
+				padding-top: 0;
+				background-color: var(--vl-prime-c);
+				.header-top  {
+					display: none;
+				}
+				.header-navigation {
+					padding: 20px 0px;
 				}
 			}
 		}

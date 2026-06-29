@@ -26,6 +26,7 @@
 			margin: 0 auto;
 			font-size: 40px;
 			max-width: 975px;
+			color: var(--vl-title-color);
 			span {
 				color: var(--vl-prime-c);
 			}
@@ -58,6 +59,18 @@
 	}
 }
 
+@keyframes floatUpDown {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-18px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 .vl-about-card {
 	padding: 20px;
 	overflow: hidden;
@@ -65,6 +78,11 @@
 	background-color: var(--vl-prime-c);
 	&:is(.ver_2) {
 		padding: 0;
+	}
+	&:is(.ver_3) {
+		.item-icon {
+			animation-delay: 0.4s;
+		}
 	}
 	.item-text {
 		margin: 0 auto;
@@ -84,6 +102,7 @@
 	.item-icon {
 		padding-top: 75px;
 		padding-bottom: 75px;
+		animation: floatUpDown 3.5s ease-in-out infinite;
 	}
 	.item-client {
 		gap: 10px;
