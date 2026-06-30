@@ -24,6 +24,9 @@
 		.inner-img {
 			overflow: hidden;
 			border-radius: 10px;
+			img {
+				transition: all 500ms ease-in-out;
+			}
 		}
 		.inner-meta {
 			top: 30px;
@@ -72,6 +75,13 @@
 			}
 		}
 	}
+	&:hover {
+		.inner-img {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
 }
 
 .vl-more-btn {
@@ -80,8 +90,14 @@
 		line-height: 1;
 		font-weight: 500;
 		border-radius: 4px;
-		padding: 20px 30px;
+		padding: 18px 30px;
 		font-family: var(--vl-inter);
+		border: 1px solid transparent;
 		background-color: var(--vl-prime-c);
+		&:hover {
+			color: #000;
+			background-color: transparent;
+			border: 1px solid var(--vl-prime-c);
+		}
 	}
 }

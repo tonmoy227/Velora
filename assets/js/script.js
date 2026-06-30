@@ -108,6 +108,16 @@ Last change:    00/00/00
 		fixedContentPos: false,
 	});
 
+	if($('.vl-split-1').length) {
+		var txtSplit = $('.vl-split-1');
+		if(txtSplit.length == 0) return; gsap.registerPlugin(SplitText); txtSplit.each(function(index, el) {
+			el.split = new SplitText(el, { 
+				type: "lines",
+				wordsClass: "split-lines"
+			});
+		});
+	}
+
 
 
 	$('.marquee-right').marquee({
@@ -435,6 +445,104 @@ Last change:    00/00/00
 	})
 
 
+	var AXC3 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".vl-testi-img-wrap",
+			start: "top 30%",
+			toggleActions: "play reverse play reverse",
+			markers: false,
+		},
+	})
+	AXC3
+	.from(".vl-testi-img-wrap .item-client .client-avtr li", {
+		yPercent: 100,
+		opacity: 0,
+		ease: "back.out(1.5)",
+		duration: 1, 
+		stagger: -.2,
+	})
+
+
+	document.querySelectorAll('.vl-room-item').forEach(function (card) {
+		const imgWrap = card.querySelector('.inner-img');
+		const img = imgWrap.querySelector('img');
+
+		const moveStrength = 50;
+
+		imgWrap.addEventListener('mousemove', function (e) {
+			const rect = imgWrap.getBoundingClientRect();
+
+			const x = (e.clientX - rect.left) / rect.width - 0.5;
+			const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+			const moveX = x * moveStrength;
+			const moveY = y * moveStrength;
+
+			img.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
+		});
+
+		imgWrap.addEventListener('mouseleave', function () {
+			img.style.transform = 'translate(0, 0) scale(1)';
+		});
+	});
+
+
+	var AXC4 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".vl-video-area",
+			start: "top 0%",
+			toggleActions: "play reverse play reverse",
+			markers: false,
+		},
+	})
+	AXC4
+	.to(".vl-video-shape", {
+		scale: 5,
+		ease: "back.out(1.5)",
+		duration: 1, 
+	})
+
+
+	var AXC5 = gsap.timeline({
+		scrollTrigger: {
+			trigger: ".vl-ftr-content",
+			start: "top 30%",
+			toggleActions: "play reverse play reverse",
+			markers: false,
+		},
+	})
+	AXC5
+	.from(".vl-footer-brand", {
+		yPercent: 100,
+		opacity: 0,
+		ease: "back.out(1.5)",
+		duration: 1, 
+		stagger: -.2,
+	})
+
+
+
+	if (window.matchMedia("(min-width: 992px)").matches) {
+		const ServiceCardItem = gsap.utils.toArray(".vl-room-item");
+		const animateCard = (card, wrapper, index) => {
+			gsap.to(card, {
+				transformOrigin: "top center",
+				duration: 2,
+				scrub: 1.5,
+				ease: "power1.out",
+				scrollTrigger: {
+					trigger: wrapper,
+					start: `top ${0 + 0 * index}`, 
+					end: "bottom 100%",
+					endTrigger: ".vl-room-wrapper",
+					pin: wrapper,
+					pinSpacing: false,
+					markers: false,
+				},
+			});
+		};
+		ServiceCardItem.forEach((wrapper, index) => animateCard([index], wrapper, index));
+	} 
 
 
 })(jQuery);

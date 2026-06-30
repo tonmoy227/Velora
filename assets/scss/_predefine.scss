@@ -319,7 +319,12 @@ a {
 		padding: 17px 40px;
 		border-radius: 4px;
 		font-family: var(--vl-inter);
-		border: 1px solid #FFFFFF33;	
+		border: 1px solid #FFFFFF33;
+		&:hover {
+			color: #fff;
+			border: 1px solid var(--vl-prime-c);
+			background-color: var(--vl-prime-c);
+		}	
 	}
 }
 

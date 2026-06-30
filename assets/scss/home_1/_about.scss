@@ -138,4 +138,12 @@
 			}
 		}
 	}
+	.vl-btn {
+		a {
+			&:hover {
+				color: #000;
+				background-color: #fff;
+			}
+		}
+	}
 }

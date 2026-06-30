@@ -29,6 +29,12 @@
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				transition: all 300ms ease-in-out;
+			}
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
 			}
 		}
 	}
@@ -75,9 +81,13 @@
 				font-size: 14px;
 				color: #FFFFFFCC;
 				position: absolute;
+				transition: all 500ms ease-in-out;
 				background-color: transparent;
 				i {
 					transform: rotate(-45deg);
+				}
+				&:hover {
+					letter-spacing: .5px;
 				}
 			}
 			span {
@@ -118,6 +128,22 @@
 			margin-bottom: 10px;
 			a {
 				color: #fff;
+				position: relative;
+				&:before {
+					left: 0;
+					bottom: 0;
+					width: 0%;
+					height: 1px;
+					content: '';
+					position: absolute;
+					background-color: #fff;
+					transition: all 500ms ease-in-out;
+				}
+				&:hover {
+					&:before {
+						width: 100%;
+					}
+				}
 			}
 		}
 	}
@@ -166,8 +192,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		li {
-			color: #fff;
 			position: relative;
+			a {
+				color: #fff;
+				&:hover {
+					color: var(--vl-prime-c2);
+				}
+			}
 			&:before {
 				top: 5px;
 				width: 1px;
