@@ -1,0 +1,54 @@
+.vl-book-filter-form {
+	padding: 30px 80px;
+	background-color: #635D3B;
+}
+
+.vl-bk-filter-area {
+	.filter-item {
+		width: 100%;
+		max-width: 324px;
+		position: relative;
+		&:before {
+			right: 0;
+			bottom: 5px;
+			color: #ECE5D6;
+			font-size: 14px;
+			content: '\f107';
+			font-weight: 600;
+			position: absolute;
+			font-family: 'Font Awesome 6 Free';
+		}
+		label {
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			font-family: var(--vl-inter);
+		}
+		input,select {
+			width: 100%;
+			border: none;
+			color: #ECE5D6;
+			font-size: 14px;
+			appearance: none;
+			padding-bottom: 10px;
+			background-color: transparent;
+			border-bottom: 1px solid #FFFFFF33;
+			&::placeholder {
+				font-size: 14px;
+				color: #ECE5D6;
+			}
+		}
+	}
+	button {
+		border: none;
+		font-size: 14px;
+		color: #272C21;
+		font-weight: 500;
+		border-radius: 10px;
+		padding: 14px 40px;
+		background-color: #fff;
+	}
+}

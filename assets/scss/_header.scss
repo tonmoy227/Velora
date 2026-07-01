@@ -246,6 +246,20 @@
 			}
 		}
 	}
+	&:is(.header_style_two) {
+		padding-top: 26px;
+		.vl-header-content {
+			margin: 0 auto;
+			padding: 0px 15px;
+			max-width: 1790px;
+			.vl-menu-trigger {
+				button {
+					border: none;
+					background-color: transparent;
+				}
+			}
+		}
+	}
 	&:is(.txa_sticky_header) {
 		position: fixed;
 		width: 100%;

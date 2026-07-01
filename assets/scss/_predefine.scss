@@ -326,6 +326,12 @@ a {
 			background-color: var(--vl-prime-c);
 		}	
 	}
+	&:is(.ver_2) {
+		a {
+			color: #272D22;
+			border: 1px solid #22222233
+		}
+	}
 }
 
 .vl-sec-title {
@@ -364,6 +370,9 @@ a {
 		@media #{$xxs} {
 			font-size: 30px;
 		}
+	}
+	p {
+		padding-top: 20px;
 	}
 }
 

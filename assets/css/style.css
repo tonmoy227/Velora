@@ -313,6 +313,18 @@ Font load
   border: none;
   background-color: transparent;
 }
+.vl-header-section:is(.header_style_two) {
+  padding-top: 26px;
+}
+.vl-header-section:is(.header_style_two) .vl-header-content {
+  margin: 0 auto;
+  padding: 0px 15px;
+  max-width: 1790px;
+}
+.vl-header-section:is(.header_style_two) .vl-header-content .vl-menu-trigger button {
+  border: none;
+  background-color: transparent;
+}
 .vl-header-section:is(.txa_sticky_header) {
   position: fixed;
   width: 100%;
@@ -727,6 +739,10 @@ a:hover, a:focus {
   border: 1px solid var(--vl-prime-c);
   background-color: var(--vl-prime-c);
 }
+.vl-btn:is(.ver_2) a {
+  color: #272D22;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+}
 
 .vl-sec-title .subtitle {
   color: #222222;
@@ -769,6 +785,9 @@ a:hover, a:focus {
   .vl-sec-title .sec_title {
     font-size: 30px;
   }
+}
+.vl-sec-title p {
+  padding-top: 20px;
 }
 
 .vl-scrollup {
@@ -3548,6 +3567,299 @@ a:hover, a:focus {
   color: #000;
   background-color: transparent;
   border: 1px solid var(--vl-prime-c);
+}
+
+/*---------------------------------------------------- */
+/******* HOME PAGE 2 *******/
+/*Hero area*/
+/*----------------------------------------------------*/
+.vl-hero2-sec {
+  padding: 185px 0px 75px;
+  background-color: #272D22;
+}
+
+.vl-hero2-content .hero-symbol {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.vl-hero2-content .hero-symbol span {
+  gap: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 22px 15px 22px 20px;
+  font-family: var(--vl-heading);
+}
+.vl-hero2-content .hero_title {
+  color: #fff;
+  margin: 0 auto;
+  padding: 0px 15px;
+  font-size: 100px;
+  line-height: 1.2;
+  max-width: 765px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .vl-hero2-content .hero_title {
+    font-size: 75px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 575px) {
+  .vl-hero2-content .hero_title {
+    font-size: 65px;
+  }
+}
+@media (max-width: 480px) {
+  .vl-hero2-content .hero_title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 360px) {
+  .vl-hero2-content .hero_title {
+    font-size: 40px;
+  }
+}
+.vl-hero2-content .hero_title span {
+  text-transform: lowercase;
+  color: var(--vl-prime-c2);
+}
+.vl-hero2-content .icon-circle-grp {
+  margin-top: 45px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.vl-hero2-content .icon-circle-grp .inner-arrow {
+  left: 0;
+  top: 50%;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.vl-hero2-content .hero-img {
+  padding: 0px 15px;
+}
+.vl-hero2-content .vl-hero-year {
+  left: 0;
+  right: 0;
+  top: 30%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  max-width: 1530px;
+  position: absolute;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 481px) and (max-width: 575px), (max-width: 480px) {
+  .vl-hero2-content .vl-hero-year {
+    display: none !important;
+  }
+}
+.vl-hero2-content .vl-hero-year span {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+/*---------------------------------------------------- */
+/*Filter area*/
+/*----------------------------------------------------*/
+.vl-book-filter-form {
+  padding: 30px 80px;
+  background-color: #635D3B;
+}
+
+.vl-bk-filter-area .filter-item {
+  width: 100%;
+  max-width: 324px;
+  position: relative;
+}
+.vl-bk-filter-area .filter-item:before {
+  right: 0;
+  bottom: 5px;
+  color: #ECE5D6;
+  font-size: 14px;
+  content: "\f107";
+  font-weight: 600;
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+}
+.vl-bk-filter-area .filter-item label {
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: var(--vl-inter);
+}
+.vl-bk-filter-area .filter-item input, .vl-bk-filter-area .filter-item select {
+  width: 100%;
+  border: none;
+  color: #ECE5D6;
+  font-size: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-bottom: 10px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.vl-bk-filter-area .filter-item input::-webkit-input-placeholder, .vl-bk-filter-area .filter-item select::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #ECE5D6;
+}
+.vl-bk-filter-area .filter-item input::-moz-placeholder, .vl-bk-filter-area .filter-item select::-moz-placeholder {
+  font-size: 14px;
+  color: #ECE5D6;
+}
+.vl-bk-filter-area .filter-item input:-ms-input-placeholder, .vl-bk-filter-area .filter-item select:-ms-input-placeholder {
+  font-size: 14px;
+  color: #ECE5D6;
+}
+.vl-bk-filter-area .filter-item input::-ms-input-placeholder, .vl-bk-filter-area .filter-item select::-ms-input-placeholder {
+  font-size: 14px;
+  color: #ECE5D6;
+}
+.vl-bk-filter-area .filter-item input::placeholder, .vl-bk-filter-area .filter-item select::placeholder {
+  font-size: 14px;
+  color: #ECE5D6;
+}
+.vl-bk-filter-area button {
+  border: none;
+  font-size: 14px;
+  color: #272C21;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 14px 40px;
+  background-color: #fff;
+}
+
+/*---------------------------------------------------- */
+/*About area*/
+/*----------------------------------------------------*/
+.vl-ab2-sec .vl-sec-title {
+  margin: 0 auto;
+  max-width: 540px;
+}
+.vl-ab2-sec .vl-sec-title .title-shape {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.vl-ab2-sec .vl-sec-title .title-shape span {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #272D22;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  padding: 22px 15px 22px 20px;
+  font-family: var(--vl-heading);
+}
+.vl-ab2-sec .vl-sec-title .sec_title {
+  font-size: 48px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .vl-ab2-sec .vl-sec-title .sec_title {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), only screen and (min-width: 481px) and (max-width: 575px) {
+  .vl-ab2-sec .vl-sec-title .sec_title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 480px) {
+  .vl-ab2-sec .vl-sec-title .sec_title {
+    font-size: 30px;
+  }
+}
+
+.vl-ab2-content {
+  gap: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vl-ab2-card {
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  background-color: #635D3B;
+}
+.vl-ab2-card:nth-child(odd) {
+  z-index: 1;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+.vl-ab2-card .item-inner {
+  padding: 40px;
+}
+.vl-ab2-card .item-text {
+  margin-top: 30px;
+}
+.vl-ab2-card .item-text h3 {
+  color: #fff;
+  font-size: 32px;
+}
+.vl-ab2-card .item-text p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  padding-top: 25px;
+}
+.vl-ab2-card .item-text a {
+  color: #fff;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 150px;
+  padding: 13px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vl-text-scrl2-wrap {
+  display: flow-root;
+}
+.vl-text-scrl2-wrap h3, .vl-text-scrl2-wrap h4 {
+  font-size: 60px;
+  letter-spacing: -1px;
+  display: inline-block;
+  color: #635D3B;
+}
+.vl-text-scrl2-wrap h4 {
+  text-transform: uppercase;
+}
+.vl-text-scrl2-wrap i {
+  font-size: 60px;
+  margin: 0px 50px;
+  color: #635D3B;
+}
+
+/*---------------------------------------------------- */
+/*Room area*/
+/*----------------------------------------------------*/
+.vl-room2-text {
+  max-width: 510px;
 }
 
 /*---------------------------------------------------- */
