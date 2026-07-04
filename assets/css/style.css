@@ -3680,6 +3680,9 @@ a:hover, a:focus {
   background-color: #635D3B;
 }
 
+.vl-bk-filter-area {
+  gap: 30px;
+}
 .vl-bk-filter-area .filter-item {
   width: 100%;
   max-width: 324px;
@@ -3858,8 +3861,264 @@ a:hover, a:focus {
 /*---------------------------------------------------- */
 /*Room area*/
 /*----------------------------------------------------*/
+.vl-room2-content {
+  gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .vl-room2-text {
+  width: 100%;
   max-width: 510px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.vl-room2-wrapper {
+  max-width: 1250px;
+  margin-right: -48%;
+}
+
+.vl-room2-item {
+  max-width: 600px;
+}
+.vl-room2-item .item-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+.vl-room2-item .item-price {
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  line-height: 1;
+  position: absolute;
+  border-radius: 4px;
+  padding: 11px 16px;
+  background-color: #fff;
+}
+.vl-room2-item .item-price span {
+  color: rgba(34, 34, 34, 0.2);
+}
+.vl-room2-item .item-text {
+  left: 0;
+  right: 0;
+  width: 92%;
+  padding: 25px;
+  bottom: 20px;
+  margin: 0 auto;
+  border-radius: 6px;
+  position: absolute;
+  background-color: #fff;
+}
+.vl-room2-item .item-text h3 {
+  color: #222222;
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+.vl-room2-item .item-text p {
+  padding-bottom: 30px;
+}
+.vl-room2-item .item-text .inner-tag {
+  gap: 15px 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.vl-room2-item .item-text .inner-tag a {
+  gap: 6px;
+  color: #222222;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vl-rm2-nav {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vl-rm2-nav .rm2-next,
+.vl-rm2-nav .rm2-prev {
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.vl-rm2-nav .rm2-next svg path,
+.vl-rm2-nav .rm2-prev svg path {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.vl-rm2-nav .rm2-next:hover,
+.vl-rm2-nav .rm2-prev:hover {
+  background-color: #635D3B;
+}
+.vl-rm2-nav .rm2-next:hover svg path,
+.vl-rm2-nav .rm2-prev:hover svg path {
+  fill: #fff;
+}
+
+/*---------------------------------------------------- */
+/*exp area*/
+/*----------------------------------------------------*/
+.vl-exp-sec {
+  background-color: #635D3B;
+}
+
+.vl-exp-top-content .vl-sec-title {
+  max-width: 500px;
+}
+.vl-exp-top-content .vl-sec-title .sec_title {
+  color: #fff;
+}
+.vl-exp-top-content .vl-sec-title .item-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.vl-exp-top-content .vl-sec-title {
+  color: #fff;
+  max-width: 500px;
+}
+.vl-exp-top-content .item-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.vl-exp-content-wrap {
+  margin-top: -15px;
+}
+
+.vl-exp-img {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.vl-exp-tab-btn {
+  width: 100%;
+  max-width: 760px;
+}
+.vl-exp-tab-btn .nav-link {
+  width: 100%;
+}
+.vl-exp-tab-btn .nav-link:is(.active) .item-icon {
+  border-bottom: 1px solid #FFFFFF;
+}
+.vl-exp-tab-btn .item-icon {
+  gap: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 23px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.vl-exp-tab-btn .item-icon span {
+  color: #fff;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  font-family: var(--vl-heading);
+}
+
+/*---------------------------------------------------- */
+/*Dining area*/
+/*----------------------------------------------------*/
+.vl-dining-title h2 {
+  color: #272D22;
+  font-size: 80px;
+  letter-spacing: -1px;
+}
+
+.vl-dining-item {
+  gap: 30px;
+  padding: 40px 0px;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+}
+.vl-dining-item .item-text-icon {
+  gap: 40px;
+}
+.vl-dining-item .item-icon {
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.vl-dining-item .item-text h3 {
+  color: #272D22;
+  font-size: 28px;
+  padding-bottom: 10px;
+  letter-spacing: -0.7px;
+}
+.vl-dining-item .item-img {
+  width: 200px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.vl-video2-sec .item-video {
+  overflow: hidden;
+  max-height: 700px;
+  border-radius: 10px;
+}
+
+/*---------------------------------------------------- */
+/*Moment area*/
+/*----------------------------------------------------*/
+.vl-moment-top h3 {
+  color: #635D3B;
+  font-size: 48px;
+  max-width: 355px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.vl-moment-top .item-desc {
+  max-width: 500px;
+}
+.vl-moment-top .item-desc p {
+  color: #555555;
+  line-height: 1.6;
+}
+.vl-moment-top .item-desc a {
+  color: #272D22;
+  line-height: 1;
+  margin-top: 40px;
+  padding: 17px 30px;
+  border-radius: 6px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
 }
 
 /*---------------------------------------------------- */

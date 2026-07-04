@@ -1,0 +1,45 @@
+.vl-dining-title {
+	h2 {
+		color: #272D22;
+		font-size: 80px;
+		letter-spacing: -1px;
+	}
+}
+
+.vl-dining-item {
+	gap: 30px;
+	padding: 40px 0px;
+	border-bottom: 1px solid #22222233;
+	.item-text-icon {
+		gap: 40px;
+	}
+	.item-icon {
+		width: 80px;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.item-text {
+		h3 {
+			color: #272D22;
+			font-size: 28px;
+			padding-bottom: 10px;
+			letter-spacing: -.7px;
+		}
+	}
+	.item-img {
+		width: 200px;
+		height: 120px;
+		overflow: hidden;
+		border-radius: 6px;
+	}
+}
+
+.vl-video2-sec {
+	.item-video {
+		overflow: hidden;
+		max-height: 700px;
+		border-radius: 10px;
+	}
+}

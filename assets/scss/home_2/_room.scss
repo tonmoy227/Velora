@@ -1,3 +1,97 @@
-.vl-room2-text {
-	max-width: 510px;
+.vl-room2-content {
+	gap: 40px;
+	justify-content: space-between;
 }
+
+.vl-room2-text {
+	width: 100%;
+	max-width: 510px;
+	flex-direction: column;
+}
+
+.vl-room2-wrapper {
+	max-width: 1250px;
+	margin-right: -48%;
+}
+.vl-room2-item {
+	max-width: 600px;
+	.item-img {
+		overflow: hidden;
+		border-radius: 10px;
+	}
+	.item-price {
+		top: 20px;
+		right: 20px;
+		font-size: 20px;
+		line-height: 1;
+		position: absolute;
+		border-radius: 4px;
+		padding: 11px 16px;
+		background-color: #fff;
+		span {
+			color: #22222233;
+
+		}
+	}
+	.item-text {
+		left: 0;
+		right: 0;
+		width: 92%;
+		padding: 25px;
+		bottom: 20px;
+		margin: 0 auto;
+		border-radius: 6px;
+		position: absolute;
+		background-color: #fff;
+		h3 {
+			color: #222222;
+			font-size: 24px;
+			padding-bottom: 12px;
+		}
+		p {
+			padding-bottom: 30px;
+		}
+		.inner-tag {
+			gap: 15px 30px;
+			flex-wrap: wrap;
+			a {
+				gap: 6px;
+				color: #222222;	
+				line-height: 1;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+.vl-rm2-nav {
+	gap: 10px;
+	display: flex;
+	.rm2-next,
+	.rm2-prev {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		border-radius: 100%;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #22222233;
+		transition: all 500ms ease-in-out;
+		svg {
+			path {
+				transition: all 500ms ease-in-out;
+			}
+		}
+		&:hover {
+			background-color: #635D3B;
+			svg {
+				path {
+					fill: #fff;
+				}
+			}
+		}
+	}
+}
+
+

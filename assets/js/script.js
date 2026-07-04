@@ -544,5 +544,45 @@ Last change:    00/00/00
 		ServiceCardItem.forEach((wrapper, index) => animateCard([index], wrapper, index));
 	} 
 
+	if ($('.vl-room2-slider').length > 0 ) {
+		var slider = new Swiper('.vl-room2-slider', {
+			spaceBetween: 30,
+			slidesPerView: 2,
+			loop: true,
+			navigation: {
+				nextEl: ".rm2-next",
+				prevEl: ".rm2-prev",
+			},
+			autoplay: {
+				enabled: true,
+				delay: 5000
+			},
+			speed: 1000,
+			breakpoints: {
+				'1600': {
+					slidesPerView: 2,
+				},
+				'1200': {
+					slidesPerView: 2,
+				},
+				'992': {
+					slidesPerView: 2,
+				},
+				'768': {
+					slidesPerView: 1,
+				},
+				'576': {
+					slidesPerView: 1,
+				},
+				'480': {
+					slidesPerView: 1,
+				},
+				'0': {
+					slidesPerView: 1,
+				},
+			},
+		});
+	};
+
 
 })(jQuery);
