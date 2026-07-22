@@ -2,8 +2,10 @@
 	background-color: #635D3B;
 }
 .vl-exp-top-content {
+	gap: 20px;
 	.vl-sec-title {
 		max-width: 500px;
+		padding-bottom: 20px;
 		.sec_title {
 			color: #fff;
 		}
@@ -27,6 +29,11 @@
 
 .vl-exp-content-wrap {
 	margin-top: -15px;
+	@media #{$md,$sm,$xs,$xxs} {
+		margin-top: 50px;
+		flex-wrap: wrap;
+		justify-content: center !important;
+	}
 }
 
 .vl-exp-img {
@@ -42,6 +49,9 @@
 		&:is(.active) {
 			.item-icon {
 				border-bottom: 1px solid #FFFFFF;
+				i {
+					animation: bounceDown 1.5s infinite;
+				}
 			}
 		}
 	}
@@ -54,6 +64,10 @@
 		justify-content: space-between;
 		transition: all 500ms ease-in-out;
 		border-bottom: 1px solid #FFFFFF33;
+		@media #{$xs,$xxs} {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 		span {
 			color: #fff;
 			font-size: 32px;

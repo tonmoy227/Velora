@@ -38,7 +38,23 @@
 	gap: 20px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	@media #{$md,$sm,$xs,$xxs} {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media #{$xs,$xxs} {
+		grid-template-columns: 1fr;
+	}
 }
+
+@keyframes rotateBackAndForth {
+	0% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(10deg);
+	}
+}
+
 
 .vl-ab2-card {
 	z-index: 2;
@@ -48,7 +64,10 @@
 	background-color: #635D3B;
 	&:nth-child(odd) {
 		z-index: 1;
-		transform: rotate(-10deg);
+		animation: rotateBackAndForth 2s ease-in-out infinite alternate;
+		@media #{$lg,$md,$sm,$xs,$xxs} {
+			transform: rotate(0deg);
+		}
 	}
 	.item-inner {
 		padding: 40px;
@@ -71,6 +90,10 @@
 			margin-top: 150px;
 			padding: 13px 20px;
 			border: 1px solid #FFFFFF33;
+			&:hover {
+				border: 1px solid var(--vl-prime-c);
+				background-color: var(--vl-prime-c);
+			}
 		}
 	}
 }

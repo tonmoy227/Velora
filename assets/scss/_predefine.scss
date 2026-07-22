@@ -329,7 +329,10 @@ a {
 	&:is(.ver_2) {
 		a {
 			color: #272D22;
-			border: 1px solid #22222233
+			border: 1px solid #22222233;
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 }
@@ -355,6 +358,11 @@ a {
 			position: absolute;
 			background-color: #222222;
 		}
+	}
+	.subtitle2 {
+		font-size: 14px;
+		margin-bottom: 15px;
+		color: var(--vl-prime-c);
 	}
 	.sec_title {
 		font-size: 48px;

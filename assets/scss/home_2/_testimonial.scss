@@ -1,0 +1,54 @@
+.vl-testi-title {
+	line-height: 1;
+	font-size: 140px;
+	letter-spacing: -1px;
+	font-family: var(--vl-heading);
+	background: linear-gradient(0deg, #FFFFFF 0%, rgba(211, 211, 211, 1) 107.83%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.vl-testi2-content {
+	gap: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	@media #{$md,$sm} {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media #{$xs,$xxs} {
+		grid-template-columns:  1fr;
+	}
+}
+
+.vl-testi2-item {
+	padding: 40px;
+	border-radius: 10px;
+	background-color: #272D22;
+	li {
+		color: #987448;
+	}
+	.item-text {
+		margin-top: 105px;
+		span {
+			color: #fff;
+			font-weight: 500;
+			padding-bottom: 28px;
+		}
+		p {
+			color: #FFFFFF;
+			height: 240px;
+			overflow: hidden;
+			padding-bottom: 120px;
+		}
+	}
+	.item-author {
+		h3 {
+			color: #fff;
+			font-size: 24px;
+			padding-bottom: 5px;
+		}
+		span {
+			color: #987448;
+		}
+	}
+}

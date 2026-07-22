@@ -1,9 +1,14 @@
 .vl-room2-content {
 	gap: 40px;
 	justify-content: space-between;
+	@media #{$md,$sm,$xs,$xxs} {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 
 .vl-room2-text {
+	gap: 40px;
 	width: 100%;
 	max-width: 510px;
 	flex-direction: column;
@@ -12,12 +17,24 @@
 .vl-room2-wrapper {
 	max-width: 1250px;
 	margin-right: -48%;
+	@media #{$lg} {
+		margin-right: -60%;
+	}
+	@media #{$md,$sm,$xs,$xxs} {
+		max-width: 100%;
+		margin-right: 0%;
+	}
 }
 .vl-room2-item {
+	width: 100%;
+	margin: 0 auto;
 	max-width: 600px;
 	.item-img {
 		overflow: hidden;
 		border-radius: 10px;
+		img {
+			transition: all 500ms ease-in-out;
+		}
 	}
 	.item-price {
 		top: 20px;
@@ -43,10 +60,18 @@
 		border-radius: 6px;
 		position: absolute;
 		background-color: #fff;
+		@media #{$xxs} {
+			bottom: 0;
+			width: 100%;
+			position: static;
+		}
 		h3 {
 			color: #222222;
 			font-size: 24px;
 			padding-bottom: 12px;
+			&:hover {
+				letter-spacing: .5px;
+			}
 		}
 		p {
 			padding-bottom: 30px;
@@ -60,6 +85,13 @@
 				line-height: 1;
 				display: flex;
 				align-items: center;
+			}
+		}
+	}
+	&:hover {
+		.item-img {
+			img {
+				transform: scale(1.05);
 			}
 		}
 	}

@@ -1,0 +1,53 @@
+.vl-cta2-sec {
+	padding: 115px 0px;
+	background-color: #ECE5D6;
+}
+
+.vl-cta2-content {
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.vl-cta2-text {
+	max-width: 550px;
+	h2 {
+		color: #635D3B;
+		font-size: 48px;
+		line-height: 1.2;
+		letter-spacing: -.4px;
+	}
+}
+
+.vl-cta2-form {
+	width: 100%;
+	max-width: 500px;
+	position: relative;
+	input {
+		width: 100%;
+		height: 70px;
+		border: none;
+		color: #635D3B;
+		background-color: transparent;
+		border-bottom: 1px solid #22222233;
+		&::placeholder {
+			color: #635D3B;
+		}
+	}
+	button {
+		top: 0;
+		right: 0;
+		border: none;
+		height: 50px;
+		line-height: 1;
+		padding: 15px 30px;
+		position: absolute;
+		border-radius: 6px;
+		border: 1px solid #22222233;
+		background-color: transparent;
+		transition: all 400ms ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: var(--vl-prime-c);
+		}
+	}
+}

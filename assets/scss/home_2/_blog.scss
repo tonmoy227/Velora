@@ -1,0 +1,19 @@
+.vl-blog2-sec {
+	.vl-sec-title {
+		margin: 0 auto;
+		max-width: 545px;
+	}
+}
+
+.vl-blog2-content {
+	gap: 35px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	@media #{$md,$sm} {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media #{$xs,$xxs} {
+		grid-template-columns:  1fr;
+	}
+}

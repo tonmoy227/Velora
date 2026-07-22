@@ -82,6 +82,22 @@
 			}
 		}
 	}
+	&:is(.ver_2) {
+		margin: 0 auto;
+		max-width: 410px;
+		.item-img-meta {
+			margin-bottom: 25px;
+			.inner-meta {
+				a {
+					background-color: #635D3B;
+				}
+			}
+		}
+		.blg_title {
+			font-size: 24px;
+			padding-bottom: 25px;
+		}
+	}
 }
 
 .vl-more-btn {

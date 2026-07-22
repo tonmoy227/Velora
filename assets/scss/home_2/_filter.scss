@@ -1,14 +1,26 @@
 .vl-book-filter-form {
 	padding: 30px 80px;
 	background-color: #635D3B;
+	@media #{$lg,$md,$sm,$xs,$xxs} {
+		padding: 30px 20px;
+	}
 }
 
 .vl-bk-filter-area {
 	gap: 30px;
+	@media #{$lg,$md,$sm,$xs,$xxs} {
+		gap: 15px;
+	}
+	@media #{$md,$sm,$xs,$xxs} {
+		flex-wrap: wrap;
+	}
 	.filter-item {
 		width: 100%;
 		max-width: 324px;
 		position: relative;
+		@media #{$sm,$xs,$xxs} {
+			max-width: 100%;
+		}
 		&:before {
 			right: 0;
 			bottom: 5px;
@@ -51,5 +63,10 @@
 		border-radius: 10px;
 		padding: 14px 40px;
 		background-color: #fff;
+		transition: all 500ms ease-in-out;
+		&:hover {
+			color: #fff;
+			background-color: var(--vl-prime-c2);
+		}
 	}
 }

@@ -260,6 +260,17 @@
 			}
 		}
 	}
+	&:is(.header_style_three) {
+		padding: 30px 15px;
+		.vl-header-content {
+			width: 100%;
+			margin: 0 auto;
+			max-width: 600px;
+			border-radius: 6px;
+			padding: 16px 20px;
+			background-color: #fff;
+		}
+	}
 	&:is(.txa_sticky_header) {
 		position: fixed;
 		width: 100%;
@@ -282,6 +293,10 @@
 				.header-navigation {
 					padding: 20px 0px;
 				}
+			}
+			&:is(.header_style_two) {
+				padding: 15px 0px;
+				background-color: #272D22;
 			}
 		}
 	}

@@ -52,6 +52,9 @@
 		margin-top: 45px;
 		position: relative;
 		margin-bottom: 20px;
+		.inner-circle {
+			animation: spin 10s linear infinite;
+		}
 		.inner-arrow {
 			left: 0;
 			top: 50%;

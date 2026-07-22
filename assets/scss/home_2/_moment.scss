@@ -1,4 +1,7 @@
 .vl-moment-top {
+	gap: 20px 30px;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
 	h3 {
 		color: #635D3B;
 		font-size: 48px;
@@ -19,6 +22,24 @@
 			padding: 17px 30px;
 			border-radius: 6px;
 			border: 1px solid #22222233;
+		}
+	}
+}
+
+.vl-moment-img-wrap {
+	display: flow-root;
+}
+
+.vl-moment-img-wrap {
+	.vl-moment-img {
+		margin: 0px 60px;
+		display: inline-block;
+		.item-img {
+			overflow: hidden;
+			border-radius: 6px;
+			object-fit: cover;
+			object-position: top;
+
 		}
 	}
 }

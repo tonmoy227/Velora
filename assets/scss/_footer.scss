@@ -216,3 +216,49 @@
 		}
 	}
 }
+
+.vl-ftr2-sec {
+	margin-top: -49px;
+	background-color: #272D22;
+}
+
+.vl-ftr2-content {
+	.item-text {
+		margin: 0 auto;
+		max-width: 365px;
+		p {
+			font-size: 20px;
+			color: #FFFFFFCC;
+		}
+	}
+	.item-social {
+		gap: 60px;
+		display: flex;
+		a {
+			color: #fff;
+			width: 60px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			border-radius: 100%;
+			justify-content: center;
+			border: 1px solid #FFFFFF33;
+			&:hover {
+				color: #635D3B;
+				background-color: #fff;
+			}
+		}
+	}
+}
+
+.vl-ftr2-copyright {
+	color: #FFFFFF;
+	padding: 25px 0px;
+	border-top: 1px solid #FFFFFF33;
+}
+
+
+
+
+
+
